@@ -12,3 +12,5 @@ const switchToTabs = function (afterDivId) {
   }
   $(afterDivId)[0].style.display = "block";
 };`
+
+<img src="https://github.com/Sandra-Kao/CodePen-Switch-entire-tab-by-JavaScript/blob/main/ezgif.com-gif-maker.gif">
