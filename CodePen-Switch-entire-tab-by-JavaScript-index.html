@@ -1,0 +1,136 @@
+<style>
+    .container {
+        height: 400px;
+        width: 500px;
+        background-repeat: no-repeat;
+        background-size: 500px auto;
+        background-position: left;
+        top: 0;
+        left: 0;
+    }
+
+    .nav-tabs>li>a {
+        padding: 16px 25px 12px;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        text-transform: uppercase;
+        text-shadow: 0 0 0.2em #ffffff;
+        color: #444857;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border: none !important;
+        border-bottom: 4px solid transparent !important;
+    }
+
+    .tab-content>.tab-pane {
+        height: 300px;
+        display: block;
+    }
+</style>
+<div>
+    <!-- Tab Start-->
+    <div class="container" id="div-dog"
+        style="display: block; background-image: url('https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg');">
+        <ul class="nav nav-tabs text-center">
+            <li onclick="switchToTabs('#div-dog')"><a href="#div-dog">Dog</a></li>
+            <li onclick="switchToTabs('#div-eagle')"><a href="#div-eagle">Eagle</a></li>
+            <li onclick="switchToTabs('#div-cat')"><a href="#div-cat">Cat</a></li>
+            <li onclick="switchToTabs('#div-monkey')"><a href="#div-monkey">Monkey</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <h3>Dog</h3>
+                        <div class="">
+                            <p>Dog is div-dog </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Start-->
+    <div class="container" id="div-eagle"
+        style="display: none; background-image: url('https://images.pexels.com/photos/2669797/pexels-photo-2669797.jpeg');">
+        <ul class="nav nav-tabs text-center">
+            <li onclick="switchToTabs('#div-dog')"><a href="#div-dog">Dog</a></li>
+            <li onclick="switchToTabs('#div-eagle')"><a href="#div-eagle">Eagle</a></li>
+            <li onclick="switchToTabs('#div-cat')"><a href="#div-cat">Cat</a></li>
+            <li onclick="switchToTabs('#div-monkey')"><a href="#div-monkey">Monkey</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <h3>Eagle</h3>
+                        <div class="">
+                            <p>Eagle is div-eagle </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Start-->
+    <div class="container" id="div-cat"
+        style="display: none; background-image: url('https://images.pexels.com/photos/6257808/pexels-photo-6257808.jpeg');">
+        <ul class="nav nav-tabs text-center">
+            <li onclick="switchToTabs('#div-dog')"><a href="#div-dog">Dog</a></li>
+            <li onclick="switchToTabs('#div-eagle')"><a href="#div-eagle">Eagle</a></li>
+            <li onclick="switchToTabs('#div-cat')"><a href="#div-cat">Cat</a></li>
+            <li onclick="switchToTabs('#div-monkey')"><a href="#div-monkey">Monkey</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <h3>Cat</h3>
+                        <div class="">
+                            <p>Cat is div-cat </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tab Start-->
+    <div class="container" id="div-monkey"
+        style="display: none; background-image: url('https://images.pexels.com/photos/3342627/pexels-photo-3342627.jpeg');">
+        <ul class="nav nav-tabs text-center">
+            <li onclick="switchToTabs('#div-dog')"><a href="#div-dog">Dog</a></li>
+            <li onclick="switchToTabs('#div-eagle')"><a href="#div-eagle">Eagle</a></li>
+            <li onclick="switchToTabs('#div-cat')"><a href="#div-cat">Cat</a></li>
+            <li onclick="switchToTabs('#div-monkey')"><a href="#div-monkey">Monkey</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane">
+                <div class="row">
+                    <div class="col-md-5 col-sm-6">
+                        <h3>Monkey</h3>
+                        <div class="">
+                            <p>Monkey is div-monkey </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;">Photos from Pexels</div>
+</div>
+
+<script>
+    //Tabs for "Animal Tabs"
+    const switchToTabs = function (afterDivId) {
+        const animalTabs = document.querySelectorAll("div.container");
+        for (let i = 0; i < animalTabs.length; i++) {
+            animalTabs[i].style.display = "none";
+        }
+        $(afterDivId)[0].style.display = "block";
+    };
+</script>
