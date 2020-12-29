@@ -3,6 +3,8 @@
 ## 有個需求需要在切Tab時，連整個背景圖片一起置換，故作此JavaScript.
 Bootstrap and jQuery are required.
 
+Codepen Demo: https://codepen.io/K-SY/pen/GRjyQzg
+
 ## JavaScript
 `//Tabs for "Animal Tabs"
 const switchToTabs = function (afterDivId) {
