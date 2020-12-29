@@ -9,11 +9,11 @@ Codepen Demo: https://codepen.io/K-SY/pen/GRjyQzg
 ------
 >//Tabs for "Animal Tabs"  
 >const switchToTabs = function (afterDivId) {  
->  const animalTabs = document.querySelectorAll("div.container");  
->  for (let i = 0; i < animalTabs.length; i++) {  
->    animalTabs[i].style.display = "none";  
->  }  
->  $(afterDivId)[0].style.display = "block";  
+>    const animalTabs = document.querySelectorAll("div.container");  
+>        for (let i = 0; i < animalTabs.length; i++) {  
+>            animalTabs[i].style.display = "none";  
+>        }  
+>    $(afterDivId)[0].style.display = "block";  
 >};  
 ------
 
