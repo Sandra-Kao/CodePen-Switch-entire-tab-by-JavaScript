@@ -6,13 +6,15 @@ Bootstrap and jQuery are required.
 Codepen Demo: https://codepen.io/K-SY/pen/GRjyQzg
 
 ## JavaScript
-`//Tabs for "Animal Tabs"
-const switchToTabs = function (afterDivId) {
-  const animalTabs = document.querySelectorAll("div.container");
-  for (let i = 0; i < animalTabs.length; i++) {
-    animalTabs[i].style.display = "none";
-  }
-  $(afterDivId)[0].style.display = "block";
-};`
+------
+>//Tabs for "Animal Tabs"  
+>const switchToTabs = function (afterDivId) {  
+>  const animalTabs = document.querySelectorAll("div.container");  
+>  for (let i = 0; i < animalTabs.length; i++) {  
+>    animalTabs[i].style.display = "none";  
+>  }  
+>  $(afterDivId)[0].style.display = "block";  
+>};  
+------
 
 <img src="https://github.com/Sandra-Kao/CodePen-Switch-entire-tab-by-JavaScript/blob/main/ezgif.com-gif-maker.gif">
